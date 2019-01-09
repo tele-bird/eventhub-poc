@@ -1,18 +1,15 @@
 ﻿using System.Collections.Generic;
 using SQLite;
-using TaskyPortableStandardLibrary;
 
 namespace Tasky.PortableStandardLibrary
 {
     public class TodoItemRepository
     {
         TodoDatabase db = null;
-        IEventHubSender _eventHubSender = null;
 
         public TodoItemRepository(SQLiteConnection conn)
         {
             db = new TodoDatabase(conn);
-            _eventHubSender = new EventHubSender();
         }
 
         public TodoItem GetTask(int id)
@@ -27,7 +24,6 @@ namespace Tasky.PortableStandardLibrary
 
         public int SaveTask(TodoItem item)
         {
-            _eventHubSender.Send($"saved {item.Name}");
             return db.SaveItem(item);
         }
 

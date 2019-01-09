@@ -3,7 +3,7 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskyPortableStandardLibrary
+namespace Tasky.PortableStandardLibrary
 {
     public class EventHubSender : IEventHubSender
     {

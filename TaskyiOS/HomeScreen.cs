@@ -1,18 +1,17 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UIKit;
 using MonoTouch.Dialog;
 using Tasky.PortableStandardLibrary;
 using Tasky.ApplicationLayer;
-using TaskyPortableStandardLibrary;
 
-namespace Tasky.Screens {
+namespace Tasky.Screens
+{
 
-	/// <summary>
-	/// A UITableViewController that uses MonoTouch.Dialog - displays the list of Tasks
-	/// </summary>
-	public class HomeScreen : DialogViewController {
+    /// <summary>
+    /// A UITableViewController that uses MonoTouch.Dialog - displays the list of Tasks
+    /// </summary>
+    public class HomeScreen : DialogViewController {
 		// 
 		List<TodoItem> tasks;
 		
@@ -38,27 +37,27 @@ namespace Tasky.Screens {
 
         private void EventHubListener_MessageReceived(object sender, string e)
         {
-            string message = e;
-            string title = "Event Hub message";
-            var alertController = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
-            var positiveAction = UIAlertAction.Create(title,
-                                                      UIAlertActionStyle.Default,
-                                                      action =>
-                                                      {
-                                                      });
-            alertController.AddAction(positiveAction);
+            //string message = e;
+            //string title = "Event Hub message";
+            //var alertController = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
+            //var positiveAction = UIAlertAction.Create(title,
+            //                                          UIAlertActionStyle.Default,
+            //                                          action =>
+            //                                          {
+            //                                          });
+            //alertController.AddAction(positiveAction);
 
-            GetTopViewController().PresentViewControllerAsync(alertController, true);
+            //GetTopViewController().PresentViewControllerAsync(alertController, true);
         }
 
-        private UIViewController GetTopViewController(UIViewController startViewController = null)
-        {
-            var viewController = startViewController ?? UIApplication.SharedApplication.KeyWindow.RootViewController;
+        //private UIViewController GetTopViewController(UIViewController startViewController = null)
+        //{
+        //    var viewController = startViewController ?? UIApplication.SharedApplication.KeyWindow.RootViewController;
 
-            return viewController?.PresentedViewController == null
-                ? viewController
-                : GetTopViewController(viewController.PresentedViewController);
-        }
+        //    return viewController?.PresentedViewController == null
+        //        ? viewController
+        //        : GetTopViewController(viewController.PresentedViewController);
+        //}
 
         protected void ShowTaskDetails(TodoItem item)
 		{

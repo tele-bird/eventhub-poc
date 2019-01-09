@@ -1,4 +1,4 @@
-﻿namespace TaskyPortableStandardLibrary
+﻿namespace Tasky.PortableStandardLibrary
 {
     internal class EventHubConstants
     {

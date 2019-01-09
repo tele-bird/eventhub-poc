@@ -26,6 +26,10 @@ namespace TaskyAndroid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.Azure.Amqp.Resource.String.ApplicationName = global::TaskyAndroid.Resource.String.ApplicationName;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Id.agentWebView = global::TaskyAndroid.Resource.Id.agentWebView;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.Layout.WebAuthenticationBroker = global::TaskyAndroid.Resource.Layout.WebAuthenticationBroker;
+			global::Microsoft.IdentityModel.Clients.ActiveDirectory.Resource.String.ApplicationName = global::TaskyAndroid.Resource.String.ApplicationName;
 		}
 		
 		public partial class Attribute
@@ -87,6 +91,9 @@ namespace TaskyAndroid
 			// aapt resource value: 0x7f050001
 			public const int TaskList = 2131034113;
 			
+			// aapt resource value: 0x7f05000b
+			public const int agentWebView = 2131034123;
+			
 			// aapt resource value: 0x7f050007
 			public const int chkDone = 2131034119;
 			
@@ -115,6 +122,9 @@ namespace TaskyAndroid
 			// aapt resource value: 0x7f030002
 			public const int TaskListItem = 2130903042;
 			
+			// aapt resource value: 0x7f030003
+			public const int WebAuthenticationBroker = 2130903043;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -128,11 +138,14 @@ namespace TaskyAndroid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int ApplicationName = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
+			
+			// aapt resource value: 0x7f040001
+			public const int hello = 2130968577;
 			
 			static String()
 			{

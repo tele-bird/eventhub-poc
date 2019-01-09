@@ -1,7 +1,7 @@
 ﻿using Microsoft.Azure.EventHubs.Processor;
 using System;
 
-namespace TaskyPortableStandardLibrary
+namespace Tasky.PortableStandardLibrary
 {
     public class EventProcessorFactory : IEventProcessorFactory
     {

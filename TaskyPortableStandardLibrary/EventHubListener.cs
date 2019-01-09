@@ -3,7 +3,7 @@ using Microsoft.Azure.EventHubs.Processor;
 using System;
 using System.Threading.Tasks;
 
-namespace TaskyPortableStandardLibrary
+namespace Tasky.PortableStandardLibrary
 {
     public class EventHubListener : IEventHubListener
     {

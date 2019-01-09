@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace TaskyPortableStandardLibrary
+namespace Tasky.PortableStandardLibrary
 {
     public interface IEventHubSender
     {
